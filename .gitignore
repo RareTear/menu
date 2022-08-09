@@ -1,0 +1,12 @@
+venv/
+*.sqlite3
+media/*
+app/__pycache__/
+app/migrations/
+auth/__pycache__/
+config/__pycache__/
+config/config.py
+test*
+.idea/
+favicon.ico
+
