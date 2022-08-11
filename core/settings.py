@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = ['https://dashboard.heroku.com/apps/deliverproject31']
+# CORS_ORIGIN_WHITELIST = ['https://dashboard.heroku.com/apps/deliverproject31']
 
 ROOT_URLCONF = 'core.urls'
 
