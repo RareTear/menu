@@ -25,6 +25,7 @@ class Category(models.Model):
     slug = models.SlugField(max_length=200)
     is_lux = models.BooleanField(default=False)
 
+
     class Meta:
         ordering = ('name',)
         verbose_name = 'category'
@@ -93,3 +94,8 @@ def profile_image_delete(sender, instance, **kwargs):
 def product_image_delete(sender, instance, **kwargs):
     if instance.image:
         instance.image.delete(True)
+
+class Restaurant(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.TextField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
